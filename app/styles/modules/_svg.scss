@@ -1,0 +1,159 @@
+.dodecahedron{
+  &:hover{
+    //Experiment with playing around with the opacity flashing
+      // animation: opacityAnim 0.8s ease;
+    #face-1{
+      transform: translate3d(0, -5px, 0);
+      transform-origin: 50% 50%;
+    }
+    #face-2{
+      transform: translate3d(-2px, -2px, 0);
+    }
+    #face-3{
+      transform: translate3d(2px, -2px, 0);
+    }
+    #face-4{
+      transform: translate3d(0, 2px, 0);
+    }
+    #face-5{
+      transform: translate3d(3px, 3px, 0);
+    }
+    #face-6{
+      transform: translate3d(-3px, 3px, 0);
+    }
+  }
+
+  #face-1{
+    &:hover{
+      animation: opacityAnim 0.8s ease;
+    }
+  }
+  #face-2{
+    &:hover{
+      animation: opacityAnim 0.8s ease;
+    }
+  }
+  #face-3{
+    &:hover{
+      animation: opacityAnim 0.8s ease;
+    }
+  }
+  #face-4{
+    &:hover{
+      animation: opacityAnim 0.8s ease;
+    }
+  }
+  #face-5{
+    &:hover{
+      animation: opacityAnim 0.8s ease;
+    }
+  }
+  #face-6{
+    &:hover{
+      animation: opacityAnim 0.8s ease;
+    }
+  }
+}
+
+.path{
+  stroke-width: 3;
+  stroke: white;
+  stroke-dasharray: 3;
+}
+
+.dec-face{
+  stroke: #CCCBCB;
+  stroke-width: 0.5;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  transition: all 0.5s ease;
+  transform-origin: 50% 50%;
+  &:hover{
+    opacity: 1;
+    // animation: opacityAnim 0.8s ease;
+  }
+}
+
+.dec-face--dark {
+    opacity: 0.6;
+    fill: #fff;
+}
+.dec-face--med {
+    opacity: 0.8;
+    fill: #fff;
+}
+
+.dec-face--dark-med{
+  fill: #fff;
+  opacity: 0.7;
+}
+
+.dec-face--light {
+    opacity: 0.90;
+    fill: #fff;
+}
+
+.arrow-container{
+  overflow: hidden;
+}
+
+.arrow{
+  width: 105%;
+  margin-left: -2.5%;
+}
+
+#up-arrow{
+  margin-bottom: -3px;
+}
+
+.arrow-path{
+  fill: #fff;
+}
+
+.logo-line{
+  fill: none;
+  stroke: #1E1E1C;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.logo-line--thin{
+  stroke-width: 0.5;
+}
+
+.logo-line--thick{
+  stroke-width: 1;
+}
+
+@keyframes opacityAnim{
+  0%{
+    opacity: inherit;
+  }
+
+  10%{
+    opacity: 0.2;
+  }
+
+  15%{
+    opacity: 0.3
+  }
+
+  20%{
+    opacity: 0.9
+  }
+  23%{
+    opacity: 1;
+  }
+  35%{
+    opacity: 0.8
+  }
+  40%{
+    opacity: 0.6
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}

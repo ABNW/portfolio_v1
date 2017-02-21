@@ -1,0 +1,178 @@
+
+body{
+  background-color: white;
+}
+
+header{
+  @include angled-edge('outside bottom','lower left', #ffffff, 50);
+
+  &:after{
+    background-color: #0BBCD6;
+  }
+}
+
+.wrapper{
+
+  .container{
+    background: #34233b; /* Old browsers */
+    background: -moz-linear-gradient(left,  #34233b 20%, #f59234 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #34233b 20%,#f59234 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #34233b 20%,#f59234 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34233b', endColorstr='#f59234',GradientType=1 ); /* IE6-9 */
+
+    position: relative;
+    color: white;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    @include breakpoint(1024px){
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @include angled-edge-gradient('outside bottom','lower right', #34233b, #f59234, '20%', '100%',40);
+
+    &:nth-child(2n){
+      background-color: #EE3924;
+      @include angled-edge('outside bottom','lower left', #EE3924, 40);
+    }
+  }
+
+  .content-holder{
+    position: relative;
+  }
+
+  .text{
+    padding-left: 0;
+    width: 100%;
+    padding-top: 0;
+    position: relative;
+    top: auto;
+    transform: translateY(0);
+    display: inline-block;
+    float: none;
+
+    @include breakpoint(1024px){
+      padding-left: 10%;
+      padding-top: 80px;
+      width: 50%;
+      top: 50%;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+  }
+
+  .content-holder{
+    @extend %clearfix;
+    margin: 0px auto;
+    padding: 50px;
+  }
+
+  .container--right{
+    .site-images{
+      float: none;
+
+      @include breakpoint(1024px){
+        float: right;
+      }
+    }
+
+    .text{
+      position: relative;
+      float: none;
+      padding-right: 0;
+      padding-left: 0;
+      text-align: left;
+
+      @include breakpoint(1024px){
+        padding-right: 10%;
+        float: left;
+        position: absolute;
+      }
+    }
+
+    .iphone-holder{
+      margin-top: -55%;
+      width: 30%;
+      left: -12%;
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  .site-images{
+    float: left;
+    margin-top: 80px;
+    padding-bottom:40px;
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 40px;
+
+    @include breakpoint(1024px){
+      margin-bottom: 0;
+      width: 50%;
+    }
+
+    &:hover{
+      .mac-iphone{
+        @include opacity(0.5);
+        transition: all 0.5s ease;
+      }
+    }
+  }
+
+  .mac-iphone{
+    max-width: 600px;
+    margin: 0px auto;
+    transition: all 0.5s ease;
+  }
+}
+
+.outbound-link{
+  position: relative;
+  @extend %clearfix;
+}
+
+.mac-holder, .iphone-holder{
+  position: relative;
+}
+
+.iphone-holder{
+  margin-top: -55%;
+  width: 30%;
+  right: -80%;
+  position: relative;
+  z-index: 3;
+}
+
+.mac-image, .iphone-image{
+  position: absolute;
+}
+
+.mac-image, .iphone-image{
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.mac-image{
+  left: 3.5%;
+  top: 4.3%;
+  width: 93.5%;
+  height: 68%;
+}
+
+.iphone-image{
+  left: 8%;
+  top: 17%;
+  width: 85%;
+  height: 66%;
+}
+
+.mac, .iphone{
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}

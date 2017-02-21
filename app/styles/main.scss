@@ -1,0 +1,15 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+// endbower
+
+@import "settings/variables"; // Override of the bootstrap default
+@import "settings/mixins";
+
+@import 'layout/reset';
+@import 'layout/type';
+@import 'layout/base';
+
+@import 'modules/header';
+@import 'modules/svg';
+@import 'modules/footer';
