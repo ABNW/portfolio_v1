@@ -6,19 +6,16 @@ body{
 header{
   @include angled-edge('outside bottom','lower left', #ffffff, 50);
 
-  &:after{
-    background-color: #0BBCD6;
-  }
 }
 
 .wrapper{
 
   .container{
-    background: #34233b; /* Old browsers */
-    background: -moz-linear-gradient(left,  #34233b 20%, #f59234 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #34233b 20%,#f59234 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #34233b 20%,#f59234 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34233b', endColorstr='#f59234',GradientType=1 ); /* IE6-9 */
+    background: #8976DC; /* Old browsers */
+    background: -moz-linear-gradient(left,  #8976DC 20%, #00D18E 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #8976DC 20%,#00D18E 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #8976DC 20%,#00D18E 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8976DC', endColorstr='#00D18E',GradientType=1 ); /* IE6-9 */
 
     position: relative;
     color: white;
@@ -31,11 +28,15 @@ header{
       padding-right: 50px;
     }
 
-    @include angled-edge-gradient('outside bottom','lower right', #34233b, #f59234, '20%', '100%',40);
+    @include angled-edge-gradient('outside bottom','lower right', #8976DC, #00D18E, '20%', '100%',40);
 
     &:nth-child(2n){
-      background-color: #EE3924;
-      @include angled-edge('outside bottom','lower left', #EE3924, 40);
+      background: #F9B30A; /* Old browsers */
+      background: -moz-linear-gradient(left,  #F9B30A 20%, #DC397E 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left,  #F9B30A 20%,#DC397E 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right,  #F9B30A 20%,#DC397E 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9B30A', endColorstr='#DC397E',GradientType=1 ); /* IE6-9 */
+      @include angled-edge-gradient('outside bottom','lower left', #F9B30A, #DC397E, '20%', '100%',40);
     }
   }
 
