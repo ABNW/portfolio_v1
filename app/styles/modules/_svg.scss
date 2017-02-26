@@ -125,6 +125,91 @@
   stroke-width: 1;
 }
 
+#LOGO{
+
+  .shape{
+    transition: all 0.8s ease;
+  }
+  .st0 {
+    opacity: 0.8;
+    fill: #3C3C3B;
+  }
+
+  .st1 {
+    opacity: 0.66;
+    fill: #3C3C3B;
+  }
+
+  .st2 {
+    opacity: 0.85;
+    fill: #3C3C3B;
+  }
+
+  .st3 {
+    opacity: 0.74;
+    fill: #3C3C3B;
+  }
+
+  .st4 {
+    fill: #3C3C3B;
+    fill-opacity: 0.66;
+  }
+
+  .st5 {
+    fill: #3C3C3B;
+    fill-opacity: 0.74;
+  }
+
+  .shape-1{
+    transform: translate(-20%, -20%);
+    animation: backToOriginalPosition 2s ease forwards;
+  }
+
+  .shape-2{
+    transform: translate(-5%, -20%);
+    animation: backToOriginalPosition 2s ease forwards;
+  }
+
+  .shape-3{
+    transform: translate(-10%, 10%);
+    animation: backToOriginalPosition 2s ease forwards;
+  }
+
+  .shape-4{
+    transform: translate(-10%, 10%);
+    animation: backToOriginalPosition 2s ease forwards;
+  }
+
+  .shape-5{
+    transform: translate(5%, -20%);
+    animation: backToOriginalPosition 2s ease forwards;
+  }
+
+  .shape-6{
+    transform: translate(20%, -20%);
+    animation: backToOriginalPosition 2s ease forwards;
+  }
+
+  .shape-7{
+    transform: translate(10%, 10%);
+    animation: backToOriginalPosition 2s ease forwards;
+  }
+
+  .shape-8{
+    transform: translate(10%, 10%);
+    animation: backToOriginalPosition 2s ease forwards;
+  }
+}
+
+@keyframes backToOriginalPosition{
+  0%{
+  }
+
+  100%{
+    transform: translate(0%,0%);
+  }
+}
+
 @keyframes opacityAnim{
   0%{
     opacity: inherit;
