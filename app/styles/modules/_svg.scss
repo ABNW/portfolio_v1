@@ -125,6 +125,14 @@
   stroke-width: 1;
 }
 
+#github{
+  .st0{
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    fill:#231E1B;
+  }
+}
+
 @keyframes opacityAnim{
   0%{
     opacity: inherit;
