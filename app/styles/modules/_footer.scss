@@ -1,4 +1,39 @@
 footer{
+
+  @extend %clearfix;
   padding: 50px;
   text-align: left;
+
+  p{
+    float: left;
+    margin-top: 29px;
+  }
+}
+
+.icon-holder{
+  float: right;
+  .icon{
+    display: inline-block;
+
+    height: 50px;
+    width: 50px;
+
+    transition: opacity 0.5s ease;
+
+    & + .icon{
+      margin-left: 25px;
+    }
+
+    img{
+      width: 100%;
+    }
+
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  .icon--twitter{
+    width: 57px;
+  }
 }
