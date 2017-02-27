@@ -1,3 +1,9 @@
+/*
+ TODO:
+   - FIREFOX GRADIENT SVG NOT CURRENTLY WORKING
+   - SAFARI DOESNT LIKE PADDING ON CONTAINER - TAKE OFF AND ADD MORE ON CONTENT HOLDER IF NECESSARY
+*/
+
 
 body{
   background-color: white;
@@ -38,10 +44,6 @@ header{
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9B30A', endColorstr='#DC397E',GradientType=1 ); /* IE6-9 */
       @include angled-edge-gradient('outside bottom','lower left', #F9B30A, #DC397E, '20%', '100%',40);
     }
-  }
-
-  .content-holder{
-    position: relative;
   }
 
   .text{
@@ -176,4 +178,10 @@ header{
   width: 100%;
   height: auto;
   z-index: 2;
+}
+
+.content-holder{
+  position: relative;
+  max-width: 1400px;
+  margin: 0px auto;
 }

@@ -164,7 +164,7 @@
 	}
 
 
-	$wedge: '<svg width="#{$width}" height="#{$height}"><defs><linearGradient id="Gradient"><stop offset="#{$stop-1}"  stop-color="#{$fill-1}"/><stop offset="#{$stop-2}" stop-color="#{$fill-2}"/></defs><polygon points="#{map-get($points, $hypotenuse)}"></polygon></svg>';
+	$wedge: '<svg width="#{$width}" height="#{$height}"><defs><linearGradient id="Gradient"><stop offset="#{$stop-1}"  stop-color="#{$fill-1}"/><stop offset="#{$stop-2}" stop-color="#{$fill-2}"/></defs><polygon points="#{map-get($points, $hypotenuse)}" fill="url(#Gradient)"></polygon></svg>';
 
 	// full width wedge
 	@if ($width == null) {
