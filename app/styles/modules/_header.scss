@@ -38,33 +38,80 @@
 }
 
 .title__divider{
+  height: 20px;
+  width: 120%;
+  margin-left: -10%;
+  position: relative;
 }
+
+.title-line{
+  height: 10px;
+  width: 100%;
+  // background-color: black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.title-wrapper{
+  display: inline-block;
+  &:hover{
+    .title__divider{
+      // background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='wiggle' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 -2 20 8'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-50%);}}%3C/style%3E%3Cpath fill='none' stroke='%23000' stroke-width='4' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+      .title-line{
+        background-color: transparent;
+      }
+    }
+
+    .blob{
+      transform: translateY(-50px);
+    }
+  }
+}
+
+.blob-holder{
+  filter: url('#gooey');
+  height: 300%;
+  position: relative;
+  z-index: 2;
+  top: -100%;
+}
+
+.blob-line{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 10px;
+  background-color: black;
+  width: 100%;
+}
+
+.blob{
+  height: 20px;
+  width: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: black;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  transition: all .5s linear;
+
+
+  & + &{
+    margin-left: 50px;
+  }
+}
+
+
 
 .title--main{
   padding-top: 25px;
   position: relative;
   display: inline-block;
-  margin: 0px auto 20px auto;
+  margin: 0px auto 9px auto;
   text-align: center;
-
-  &:after{
-    position: absolute;
-    bottom: -15px;
-    content: '';
-    width: 0;
-    left: -5%;
-    right: 0;
-    margin: 0px auto;
-    height: 3px;
-    background-color: black;
-    opacity: 0;
-    transition: all 1s ease;
-
-    .loaded &{
-      opacity: 1;
-      width: 110%;
-    }
-  }
 }
 
 .title--sub{

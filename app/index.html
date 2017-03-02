@@ -27,6 +27,14 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;">
+      <defs>
+        <filter id="gooey">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+        </filter>
+      </defs>
+    </svg>
 
     <header>
       <header>
@@ -46,6 +54,14 @@
                <div class="title-wrapper">
                  <h1 class="title title--main">Miles Tincknell</h1>
                  <div class="title__divider">
+                   <div class="title-line"></div>
+                   <div class="blob-holder">
+                     <div class="blob-line"></div>
+                     <div class="blob blob-1"></div>
+                     <div class="blob blob-2"></div>
+                     <div class="blob blob-3"></div>
+                   </div>
+
                  </div>
                  <h2 class="title title--sub">Web Developer</h2>
                </div>
@@ -235,8 +251,8 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <!-- <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/modernizr/modernizr.js"></script> -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
