@@ -69,12 +69,17 @@ header{
   .content-holder{
     @extend %clearfix;
     margin: 0px auto;
-    padding: 50px;
+    padding: 25px;
+
+    @include breakpoint(768px){
+      padding: 50px
+    }
   }
 
   .container--right{
     .site-images{
       float: none;
+      padding-left: 0;
 
       @include breakpoint(1024px){
         float: right;
