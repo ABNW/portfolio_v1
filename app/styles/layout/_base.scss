@@ -76,13 +76,23 @@ header{
     }
   }
 
+  .container--left{
+    .site-images{
+      padding-right: 10%;
+      @include breakpoint(1024px){
+        padding-left: 5%;
+      }
+    }
+
+  }
+
   .container--right{
     .site-images{
       float: none;
-      padding-left: 0;
-
+      padding-left: 10%;
       @include breakpoint(1024px){
         float: right;
+        padding-left: 5%;
       }
     }
 
