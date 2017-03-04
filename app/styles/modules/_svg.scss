@@ -1,7 +1,66 @@
+#brand{
+
+  path{
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  .st0 {
+    transition-delay: 0.5s;
+  }
+
+  .st1 {
+  }
+
+  .st2 {
+    transition-delay: 0.4s;
+  }
+
+  .st3 {
+    transition-delay: 0.3s;
+  }
+
+  .st4 {
+    transition-delay: 0.2s;
+  }
+
+  .st5 {
+    transition-delay: 0.1s;
+  }
+
+  &:hover{
+    path{
+      opacity: 1;
+    }
+    .st0 {
+      transition-delay: 0.1s;
+    }
+
+    .st1 {
+    }
+
+    .st2 {
+      transition-delay: 0.2s;
+    }
+
+    .st3 {
+      transition-delay: 0.3s;
+    }
+
+    .st4 {
+      transition-delay: 0.4s;
+    }
+
+    .st5 {
+      transition-delay: 0.5s;
+
+    }
+  }
+}
+
 .dodecahedron{
   &:hover{
     //Experiment with playing around with the opacity flashing
-      // animation: opacityAnim 0.8s ease;
     #face-1{
       transform: translate3d(0, -5px, 0);
       transform-origin: 50% 50%;
