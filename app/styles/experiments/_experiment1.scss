@@ -1,0 +1,39 @@
+.experiment--1{
+  .container{
+    height: 100vh;
+    @include angled-edge-gradient('outside bottom','lower left', #1a1a1a, #444444, '20%', '100%',40);
+    background: #1a1a1a; /* Old browsers */
+    background: -moz-linear-gradient(left,  #1a1a1a 20%, #444444 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #1a1a1a 20%,#444444 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #1a1a1a 20%,#444444 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1a', endColorstr='#444444',GradientType=1 ); /* IE6-9 */
+
+    &:nth-child(2n){
+      background: #444444; /* Old browsers */
+      background: -moz-linear-gradient(left,  #444444 20%, #1a1a1a 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left,  #444444 20%,#1a1a1a 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right,  #444444 20%,#1a1a1a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#1a1a1a',GradientType=1 ); /* IE6-9 */
+      @include angled-edge-gradient('outside bottom','lower left', #444444, #1a1a1a, '20%', '100%',40);
+    }
+  }
+
+
+  .mac-holder{
+    position: relative;
+
+    @extend %absoluteCentre;
+    max-width: 800px;
+    margin: 0px auto;
+  }
+
+  .mac-image{
+    left: 3.9%;
+    top: 4.7%;
+    width: 92.2%;
+    height: 61%;
+    background-image: url('../images/experiments/Plumes_Circle.jpg');
+    background-size: cover;
+    animation: backgroundSwitch 20s linear infinite;
+  }
+}
